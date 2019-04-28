@@ -1,12 +1,12 @@
-function load_validatentine(varargin)
-%LOAD_VALIDATENTINE Load the Validatentine library
+function load_validoozy(varargin)
+%LOAD_VALIDOOZY Load the Validoozy library
 %
-% load_validatentine
-% load_validatentine -override
+% load_validoozy
+% load_validoozy -override
 %
-% This loads the Validatentine library and makes it ready for use.
+% This loads the Validoozy library and makes it ready for use.
 %
-% When you run this function, the appropriate paths from Validatene are added
+% When you run this function, the appropriate paths from Validoozy are added
 % to your Matlab path.
 %
 % If the -override option is supplied, then the "compat" functions are added

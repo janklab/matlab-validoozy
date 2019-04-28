@@ -1,19 +1,19 @@
-Validatentine for Matlab
+Validoozy for Matlab
 ========================
 
 Additional validator functions for Matlab.
 
-Validatentine provides additional `mustBe*()` validator functions for Matlab.
+Validoozy provides additional `mustBe*()` validator functions for Matlab.
 These are the input/property-validation functions introduced in Matlab R2017a.
 
-Validatentine provides two sets of validator functions:
+Validoozy provides two sets of validator functions:
 
 * `extend` – New validator functions that Matlab does not define
 * `compat` – Back-compatibility implementations of the Matlab-provided validators, for use in Matlab versions prior to R2017a, or if you want to use my "label" extension
 
 ## Usage
 
-To use Validatentine, install the source tree somewhere on your disk, and then run `load_validatentine` from the `Mcode` directory.
+To use Validoozy, install the source tree somewhere on your disk, and then run `load_validoozy` from the `Mcode` directory.
 
 ## Label extension
 
@@ -21,18 +21,18 @@ My validator functions provide an additional optional "`label`" argument that al
 This is useful if you are calling the validator on something besides a named variable, such as a field of a struct, or a value in a cell array.
 In these cases, the validator functions are unable to automatically detect a good label via the use of `inputname`, so you can supply one manually to produce a nicer error message.
 
-Both the "extend" and "compat" implementations in Validatentine support label arguments.
+Both the "extend" and "compat" implementations in Validoozy support label arguments.
 If you want to use my label extension with Matlab-defined functions in R2017a and later, stick the `Mcode/compat` directory on the front of your Matlab path, and I _think_ it will work.
 I've defined all the "compat" functions to be compatible with Matlab's own implementations, for the signature forms that they define.
 
 ## License
 
-Validatentine for Matlab is licensed under the business-friendly BSD 2-clause license.
+Validoozy for Matlab is licensed under the business-friendly BSD 2-clause license.
 
 ## Project
 
-The home page for Validatentine for Matlab is the [Validatentine GitHub repo](https://github.com/apjanke/matlab-validatentine).
+The home page for Validoozy for Matlab is the [Validoozy GitHub repo](https://github.com/apjanke/matlab-validoozy).
 
-For support, feel free to post a bug report or question on the [Validatentine GitHub issue tracker](https://github.com/apjanke/matlab-validatentine/issues).
+For support, feel free to post a bug report or question on the [Validoozy GitHub issue tracker](https://github.com/apjanke/matlab-validoozy/issues).
 
 The project author is [Andrew Janke](https://apjanke.net).
