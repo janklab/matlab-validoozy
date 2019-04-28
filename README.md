@@ -13,10 +13,7 @@ Validatentine provides two sets of validator functions:
 
 ## Usage
 
-To use Validatentine, install the source tree somewhere on your disk, and then:
-
-  * Add its `Mcode/extend` directory to your Matlab path
-  * Add its `Mcode/compat` directory to your Matlab path if you are running Matlab R2016b or earlier
+To use Validatentine, install the source tree somewhere on your disk, and then run `load_validatentine` from the `Mcode` directory.
 
 ## Label extension
 
