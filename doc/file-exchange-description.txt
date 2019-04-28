@@ -19,7 +19,7 @@ Validoozy provides the following functions:
 extend (new functions):
   makeItBeA(x, type)
   mustBeA(x, type)
-  mustBeCelsltr(x)
+  mustBeCellstr(x)
   mustBeCharvec(x)
   mustBeSameSize(a, b)
   mustBeScalar(x)
