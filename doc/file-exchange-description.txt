@@ -10,3 +10,28 @@ The Mcode/compat directory provides re-implementations of the Matlab R2017a vali
 To use Validoozy, copy it to somewhere on your hard drive, and run the `Mcode/load_validoozy` function in Matlab. That will add the required directories to your Matlab path.
 
 The Validoozy project lives at https://github.com/apjanke/matlab-validoozy. Bug reports and feature requests are welcome.
+
+Functions
+---------
+
+Validoozy provides the following functions:
+
+extend (new functions):
+  makeItBeA(x, type)
+  mustBeA(x, type)
+  mustBeCelsltr(x)
+  mustBeCharvec(x)
+  mustBeSameSize(a, b)
+  mustBeScalar(x)
+  mustBeScalarLogical(x)
+  mustBeVector(x)
+  size2str(sz)
+
+compat:
+  mustBeFinite(x)
+  mustBeInteger(x)
+  mustBeMember(x, valid)
+  mustBeNonempty(x)
+  mustBeNumeric(x)
+  mustBeReal(x)
+
