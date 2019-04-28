@@ -25,6 +25,30 @@ Both the "extend" and "compat" implementations in Validoozy support label argume
 If you want to use my label extension with Matlab-defined functions in R2017a and later, stick the `Mcode/compat` directory on the front of your Matlab path, and I _think_ it will work.
 I've defined all the "compat" functions to be compatible with Matlab's own implementations, for the signature forms that they define.
 
+## Functions
+
+
+Validoozy provides the following functions:
+
+New functions (in `Mcode/extend`):
+  * makeItBeA(x, type)
+  * mustBeA(x, type)
+  * mustBeCelsltr(x)
+  * mustBeCharvec(x)
+  * mustBeSameSize(a, b)
+  * mustBeScalar(x)
+  * mustBeScalarLogical(x)
+  * mustBeVector(x)
+  * size2str(sz)
+
+Pre-R2017a compatibility functions (in `Mcode/compat`):
+  * mustBeFinite(x)
+  * mustBeInteger(x)
+  * mustBeMember(x, valid)
+  * mustBeNonempty(x)
+  * mustBeNumeric(x)
+  * mustBeReal(x)
+
 ## License
 
 Validoozy for Matlab is licensed under the business-friendly BSD 2-clause license.
