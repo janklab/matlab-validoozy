@@ -27,7 +27,6 @@ I've defined all the "compat" functions to be compatible with Matlab's own imple
 
 ## Functions
 
-
 Validoozy provides the following functions:
 
 New functions (in `Mcode/extend`):
@@ -36,6 +35,7 @@ New functions (in `Mcode/extend`):
   * mustBeCellstr(x)
   * mustBeCharvec(x)
   * mustBeSameSize(a, b)
+  * mustBeCongruentSizes(x1, x2, ...)
   * mustBeScalar(x)
   * mustBeScalarLogical(x)
   * mustBeVector(x)
