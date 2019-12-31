@@ -16,7 +16,8 @@ function mustBeA(x, type, label)
     if isempty(label)
       label = 'input';
     end
-    error('%s must be of type %s; got a %s', ...
+    error('validoozy:validators:mustBeA', ...
+      '%s must be of type %s; got a %s', ...
       label, type, class (x));
   end
 end

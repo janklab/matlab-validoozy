@@ -15,7 +15,8 @@ function x = mustBeScalar(x, label)
     if isempty(label)
       label = 'input';
     end
-    error('%s must be scalar; got a %s', ...
+    error('validoozy:validators:mustBeScalar', ...
+      '%s must be scalar; got a %s', ...
       label, size2str(size(x)));
   end
 end

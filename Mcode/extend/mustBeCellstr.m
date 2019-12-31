@@ -23,7 +23,8 @@ function mustBeCellstr(x, label)
     else
       type_descr = class(x);
     end
-    error('%s must be a cellstr; got a %s', ...
+    error('validoozy:validators:mustBeCellstr', ...
+      '%s must be a cellstr; got a %s', ...
       label, type_descr);
   end
 end

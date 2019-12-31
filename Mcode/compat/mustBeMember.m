@@ -20,7 +20,8 @@ function x = mustBeMember(x, valid, label)
     n_bad = numel(find(~tf));
     % TODO: Fancy inclusion of bad & valid values in the error message.
     % Probably need dispstrs() for that.
-    error ('%s must be one of the specified valid values; got %d elements that weren''t', ...
+    error ('MATLAB:validators:mustBeMember', ...
+      '%s must be one of the specified valid values; got %d elements that weren''t', ...
       label, n_bad);
   end
 end

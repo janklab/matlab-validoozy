@@ -31,7 +31,8 @@ function x = mustBeInteger(x, label)
     if isempty(label)
       label = 'input';
     end
-    error('%s must be integer-valued; but %s', ...
+    error('MATLAB:validators:mustBeInteger', ...
+      '%s must be integer-valued; but %s', ...
       label, but);
   end
 end

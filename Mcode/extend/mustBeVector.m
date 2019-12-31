@@ -16,7 +16,8 @@ function mustBeVector(x, label)
     if isempty(label)
       label = 'input';
     end
-    error('%s must be a vector; got a %s', ...
+    error('validoozy:validators:mustBeVector', ...
+      '%s must be a vector; got a %s', ...
       label, size2str(size(x)));
   end
 end

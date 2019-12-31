@@ -17,7 +17,8 @@ function mustBeCharvec (x, label)
     if isempty(label)
       label = 'input';
     end
-    error('%s must be a char row vector; got a %s %s', ...
+    error('validoozy:validators:mustBeCharvec', ...
+      '%s must be a char row vector; got a %s %s', ...
       label, size2str(size(x)), class(x));
   end
 end

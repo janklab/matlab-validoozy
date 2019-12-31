@@ -15,7 +15,8 @@ function x = mustBeNonempty(x, label)
     if isempty(label)
       label = 'input';
     end
-    error('%s must be nonempty; got a %s empty', ...
+    error('MATLAB:validators:mustBeNonempty', ...
+      '%s must be nonempty; got a %s empty', ...
       label, size2str (size (x)));
   end
 end

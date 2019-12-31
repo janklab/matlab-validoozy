@@ -18,7 +18,8 @@ function x = mustBeFinite(x, label)
       label = 'input';
     end
     ix_bad = find(~tf);
-    error ('%s must be finite; got Infs in %d elements: %s', ...
+    error('MATLAB:validators:mustBeFinite', ...
+      '%s must be finite; got Infs in %d elements: %s', ...
       label, numel (ix_bad), mat2str (ix_bad));
   end
 end

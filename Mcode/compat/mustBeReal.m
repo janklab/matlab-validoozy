@@ -15,7 +15,8 @@ function x = mustBeReal(x, label)
     if isempty(label)
       label = 'input';
     end
-    error('%s must be real; got a complex value', ...
+    error('MATLAB:validators:mustBeReal', ...
+      '%s must be real; got a complex value', ...
       label);
   end
 end

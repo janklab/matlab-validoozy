@@ -23,7 +23,8 @@ function [a, b] = mustBeSameSize(a, b, labelA, labelB)
     if isempty(labelB)
       labelB = 'input 2';
     end
-    error('%s and %s must be the same size; got %s and %s', ...
+    error('validoozy:validators:mustBeSameSize', ...
+      '%s and %s must be the same size; got %s and %s', ...
       labelA, labelB, size2str(size(a)), size2str(size(b)));
   end
 end

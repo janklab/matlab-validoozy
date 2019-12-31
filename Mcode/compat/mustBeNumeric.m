@@ -15,7 +15,8 @@ function x = mustBeNumeric(x, label)
     if isempty(label)
       label = 'input';
     end
-    error('%s must be numeric; got a %s', ...
+    error('MATLAB:validators:mustBeNumeric', ...
+      '%s must be numeric; got a %s', ...
       label, class (x));
   end
 end

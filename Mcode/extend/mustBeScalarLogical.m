@@ -17,7 +17,8 @@ function x = mustBeScalarLogical(x, label)
     if isempty(label)
       label = 'input';
     end
-    error('%s must be a scalar logical; got a %s %s', ...
-      label, size2str(size(x), class(x));
+    error('validoozy:validators:mustBeScalarLogical', ...
+      '%s must be a scalar logical; got a %s %s', ...
+      label, size2str(size(x), class(x)));
   end
 end
