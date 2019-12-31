@@ -1,0 +1,20 @@
+Validoozy change history
+========================
+
+v1.1.0 ???
+-----------------
+* Add mustBeCongruentSizes
+* Add error identifiers
+* Bug fixes in input checking of label arguments
+
+v1.0.2 2019-04-28
+-----------------
+* Minor doco changes
+
+v1.0.1 2019-04-28
+-----------------
+* Minor doco changes
+
+v1.0.0 2019-04-28
+------------------
+* Initial public release
