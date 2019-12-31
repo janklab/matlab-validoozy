@@ -46,7 +46,7 @@ else
 end
 
 szesIn = cellfun(@(x) {size(x)}, args);
-szes = padSizes(szesIn);
+szes = validoozy.internal.padSizes(szesIn);
 nDims = numel(szes{1});
 
 for iDim = 1:nDims
@@ -79,17 +79,6 @@ for iDim = 1:nDims
         labels{iArg}, size2str(szesIn{iArg}), ...
         iDim);
     end
-  end
-end
-end
-
-function out = padSizes(szes)
-out = szes;
-dimses = cellfun(@numel, szes);
-maxdims = max(dimses);
-for i = 1:numel(out)
-  if numel(out{i}) < maxdims
-    out{i}(end+1:maxdims) = 1;
   end
 end
 end
