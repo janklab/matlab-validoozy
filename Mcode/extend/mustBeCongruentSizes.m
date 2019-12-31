@@ -35,6 +35,7 @@ function mustBeCongruentSizes(varargin)
 if nargin == 0
   return
 end
+
 args = varargin;
 if isa(args{end}, 'validoozy.Label')
   labelObj = args{end};
