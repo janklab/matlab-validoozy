@@ -1,11 +1,11 @@
 Validoozy for Matlab
 ====================
 
-In R2017a, Matlab introduced "mustBe*()" validator functions, for doing declarative-ish constraints on properties and function arguments. Validoozy provides additional validator functions in this style.
+In R2017a, Matlab introduced "mustBe*()" validator functions, for doing declarative-ish constraints on properties and function arguments. Validoozy provides additional validator functions in this style. Validoozy also offers a "label" extension to the validator functions that helps produce more useful error messages.
 
 The Mcode/extend directory provides new validator functions that Matlab doesn't provide, but I've found useful in my coding.
 
-The Mcode/compat directory provides re-implementations of the Matlab R2017a validator functions for use in older versions of Matlab.
+The Mcode/compat directory provides re-implementations of the Matlab R2017a validator functions for use in older versions of Matlab. You can also use these to override Matlab's own validator functions if you wish to use the "label" extensions.
 
 To use Validoozy, copy it to somewhere on your hard drive, and run the `Mcode/load_validoozy` function in Matlab. That will add the required directories to your Matlab path.
 
@@ -22,12 +22,13 @@ extend (new functions):
   mustBeCellstr(x)
   mustBeCharvec(x)
   mustBeSameSize(a, b)
+  mustBeCongruentSizes(x1, x2, ...)
   mustBeScalar(x)
   mustBeScalarLogical(x)
   mustBeVector(x)
   size2str(sz)
 
-compat:
+compat (pre-R2017a compatibility shims):
   mustBeFinite(x)
   mustBeInteger(x)
   mustBeMember(x, valid)
