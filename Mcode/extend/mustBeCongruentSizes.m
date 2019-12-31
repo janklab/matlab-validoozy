@@ -28,6 +28,9 @@ function mustBeCongruentSizes(varargin)
 % mustBeCongruentSizes(1, 2:5, magic(3))
 % % And if you want to use labels:
 % mustBeCongruentSizes(1, 2:5, magic(3), validoozy.Label({'foo', 'bar', 'baz'}))
+%
+% See also:
+% mustBeSameSize
 
 if nargin == 0
   return

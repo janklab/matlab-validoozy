@@ -8,6 +8,10 @@ function [a, b] = mustBeSameSize(a, b, labelA, labelB)
   % the input will be described in error messages. If not supplied, 
   % inputname (...) is used, and if that is empty, it falls back to 
   % 'input 1' and 'input 2'.
+  %
+  % See also:
+  % mustBeCongruentSizes
+  
   if nargin < 3; labelA = []; end
   if nargin < 4; labelB = []; end
   if ~isequal(size(a), size(b))
