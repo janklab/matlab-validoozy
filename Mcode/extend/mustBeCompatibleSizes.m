@@ -1,9 +1,9 @@
-function mustBeCongruentSizes(varargin)
+function mustBeCompatibleSizes(varargin)
 % Requires that inputs all be the same size, or broadcast-compatible sizes
 %
-% mustBeCongruentSizes(x1, x2)
-% mustBeCongruentSizes(x1, x2, x3, ...)
-% mustBeCongruentSizes(..., labels)
+% mustBeCompatibleSizes(x1, x2)
+% mustBeCompatibleSizes(x1, x2, x3, ...)
+% mustBeCompatibleSizes(..., labels)
 %
 % Requires that all its inputs are of broadcast-compatible sizes. This
 % means that for each dimension, all arrays must be of either the same
@@ -21,13 +21,13 @@ function mustBeCongruentSizes(varargin)
 % Examples:
 %
 % % This passes
-% mustBeCongruentSizes(42, 3)
+% mustBeCompatibleSizes(42, 3)
 % % So does this
-% mustBeCongruentSizes(1, 2, magic(3))
+% mustBeCompatibleSizes(1, 2, magic(3))
 % % But this errors
-% mustBeCongruentSizes(1, 2:5, magic(3))
+% mustBeCompatibleSizes(1, 2:5, magic(3))
 % % And if you want to use labels:
-% mustBeCongruentSizes(1, 2:5, magic(3), validoozy.Label({'foo', 'bar', 'baz'}))
+% mustBeCompatibleSizes(1, 2:5, magic(3), validoozy.Label({'foo', 'bar', 'baz'}))
 %
 % See also:
 % mustBeSameSize
@@ -72,7 +72,7 @@ for iDim = 1:nDims
           labels{iArg2} = sprintf('input %d', iArg2);
         end
       end
-      error('validoozy:validators:mustBeCongruentSizes', ...
+      error('validoozy:validators:mustBeCompatibleSizes', ...
         ['Inputs must be congruent sizes, but %s is %s and %s is %s ' ...
         '(mismatch along dimension %d)'], ...
         labels{szFromArgNum}, size2str(szesIn{szFromArgNum}), ...

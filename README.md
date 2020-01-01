@@ -35,7 +35,7 @@ New functions (in `Mcode/extend`):
   * mustBeCellstr(x)
   * mustBeCharvec(x)
   * mustBeSameSize(a, b)
-  * mustBeCongruentSizes(x1, x2, ...)
+  * mustBeCompatibleSizes(x1, x2, ...)
   * mustBeScalar(x)
   * mustBeScalarLogical(x)
   * mustBeVector(x)

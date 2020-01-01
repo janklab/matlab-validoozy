@@ -18,7 +18,7 @@ function mustBeSameSize(varargin)
 % based on its type.)
 %
 % See also:
-% mustBeCongruentSizes
+% mustBeCompatibleSizes
 
 if nargin == 0
   return

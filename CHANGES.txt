@@ -3,7 +3,7 @@ Validoozy change history
 
 v1.1.0 ???
 -----------------
-* Add mustBeCongruentSizes
+* Add mustBeCompatibleSizes
 * Allow mustBeSameSize to take any number of inputs
 * Add error identifiers
 * Bug fixes in input checking of label arguments
