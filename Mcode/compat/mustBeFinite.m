@@ -1,7 +1,7 @@
-function x = mustBeFinite(x, label)
+function mustBeFinite(x, label)
 %MUSTBEFINITE Require that input is finite
 %
-% x = mustBeFinite(x, label)
+% mustBeFinite(x, label)
 %
 % Raises an error if the input x is not finite, as determined by isfinite(x).
 %

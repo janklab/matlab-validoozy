@@ -1,7 +1,7 @@
-function x = mustBeNonempty(x, label)
+function mustBeNonempty(x, label)
 %MUSTBENONEMPTY Require that input is not empty
 %
-% x = mustBeNonempty(x, label)
+% mustBeNonempty(x, label)
 %
 % Raises an error if the input x is empty, as determined by isempty(x).
 %

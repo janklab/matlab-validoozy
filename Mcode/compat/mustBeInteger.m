@@ -1,7 +1,7 @@
-function x = mustBeInteger(x, label)
+function mustBeInteger(x, label)
 %MUSTBEINTEGER Require that input is integer-valued
 %
-% x = mustBeInteger(x, label)
+% mustBeInteger(x, label)
 %
 % Raises an error if the input x is not integer-valued. "Integer-valued"
 % means, real, finite, and with no fractional value part. Integer types

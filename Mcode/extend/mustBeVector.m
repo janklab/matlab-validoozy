@@ -1,7 +1,7 @@
 function mustBeVector(x, label)
 %MUSTBEVECTOR Require that input is a vector
 %
-% x = mustBeVector(x, label)
+% mustBeVector(x, label)
 %
 % Raises an error if the input x is not a vector or empty, as determined by
 % isvector(x) || isequal(size(x), [0 0]).

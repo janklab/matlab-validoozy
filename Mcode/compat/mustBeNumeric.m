@@ -1,7 +1,7 @@
-function x = mustBeNumeric(x, label)
+function mustBeNumeric(x, label)
 %MUSTBENUMERIC Require that input is numeric
 %
-% x = mustBeNumeric(x, label)
+% mustBeNumeric(x, label)
 %
 % Raises an error if the input x is not numeric, as determined by isnumeric(x).
 %

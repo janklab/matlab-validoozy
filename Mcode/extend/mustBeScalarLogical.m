@@ -1,7 +1,7 @@
-function x = mustBeScalarLogical(x, label)
+function mustBeScalarLogical(x, label)
 %MUSTBESCALARLOGICAL Require that input is scalar logical
 %
-% x = mustBeScalarLogical(x, label)
+% mustBeScalarLogical(x, label)
 %
 % Raises an error if the input x is not a scalar logical, as determined by
 % isscalar (x) && islogical (x).

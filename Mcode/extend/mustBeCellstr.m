@@ -1,7 +1,7 @@
 function mustBeCellstr(x, label)
 %MUSTBECELLSTR Require that input is a cellstr
 %
-% x = mustBeCellstr(x, label)
+% mustBeCellstr(x, label)
 %
 % Raises an error if the input x is not a cellstr, as determined by iscellstr(x).
 %

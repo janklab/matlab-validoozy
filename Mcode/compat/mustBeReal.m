@@ -1,7 +1,7 @@
-function x = mustBeReal(x, label)
+function mustBeReal(x, label)
 %MUSTBEREAL Require that input is real
 %
-% x = mustBeReal(x, label)
+% mustBeReal(x, label)
 %
 % Raises an error if the input x is not real, as determined by isreal(x).
 %

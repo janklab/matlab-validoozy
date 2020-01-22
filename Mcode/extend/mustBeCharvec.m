@@ -1,6 +1,8 @@
 function mustBeCharvec (x, label)
 %MUSTBECHARVEC Require that input is a char row vector
 %
+% mustBeCharvec (x, label)
+%
 % Raises an error if the input x is not a row vector of chars.
 % char row vectors are Octave's normal representation of single strings.
 % (They are what are produced by '...' string literals.) As a special

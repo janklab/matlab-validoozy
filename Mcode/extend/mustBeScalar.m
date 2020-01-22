@@ -1,7 +1,7 @@
-function x = mustBeScalar(x, label)
+function mustBeScalar(x, label)
 %MUSTBESCALAR Require that input is scalar
 %
-% x = mustBeScalar(x, label)
+% mustBeScalar(x, label)
 %
 % Raises an error if the input x is not scalar, as determined by isscalar(x).
 %
