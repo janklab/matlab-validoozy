@@ -1,7 +1,7 @@
-function x = mustBeMember(x, valid, label)
+function mustBeMember(x, valid, label)
 %MUSTBEMEMBER Require that input is a member of specified valid values
 %
-% x = mustBeMember (x, valid, label)
+% mustBeMember (x, valid, label)
 %
 % Raises an error if the input x is not a member of valid, as determined
 % by ismember(x, valid).
