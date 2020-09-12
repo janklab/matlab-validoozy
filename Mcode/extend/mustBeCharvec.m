@@ -4,9 +4,10 @@ function mustBeCharvec (x, label)
 % mustBeCharvec (x, label)
 %
 % Raises an error if the input x is not a row vector of chars.
-% char row vectors are Octave's normal representation of single strings.
+% char row vectors are Matlab's normal representation of single strings.
+% (In older versions of Matlab.)
 % (They are what are produced by '...' string literals.) As a special
-% case, 0-by-0 empty chars (what is produced by the string literal '')
+% case, 0-by-0 empty chars (what is produced by the char literal '')
 % are also considered charvecs.
 %
 % label is an optional input that determines how the input will be described in
@@ -26,4 +27,5 @@ if ~(ischar(x) && (isrow(x) || isequal(size(x), [0 0])))
     '%s must be a char row vector; got a %s %s', ...
     label, size2str(size(x)), class(x));
 end
+
 end
